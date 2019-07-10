@@ -7,7 +7,7 @@ def wtf_pyramid
 
 
 
-	if (etage >= 1) && (etage <= 25) 
+	if (etage >= 1) && (etage <= 25) && (etage %2 ==0)
 		puts "Voici la pyramide :"
 
 		1.upto(etage) do |i| # de 1 à valeur donnée par l'utilisateur
@@ -48,6 +48,8 @@ def wtf_pyramid
 		
 		end
 
+	else
+		puts "Entre plutot un chiffre pair :)"	
 
 	end
 
